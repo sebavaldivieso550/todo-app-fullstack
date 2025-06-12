@@ -1,0 +1,47 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.npm/
+.eslintcache
+.prettiercache
+
+# React (Vite specific)
+dist/         # Carpeta de salida de build de Vite
+.vite/        # Caché de desarrollo de Vite
+temp/         # Carpeta temporal si Vite la crea
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# OS specific
+.DS_Store
+Thumbs.db
+
+# Environment variables
+# Específicamente ignora archivos .env en ambas carpetas
+backend/.env
+frontend/.env
+# También ignora variaciones locales comunes
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# IDE related files (opcional, puedes incluirlos si compartes configuraciones de equipo)
+.idea/      # Intellij IDEA
+.vscode/    # VS Code
+
+# Docker
+# Excluye volúmenes si los mapeaste directamente a una carpeta del repo que contiene datos sensibles
+# Para este proyecto, db_data está fuera de la raíz del repo y no debería ser un problema.
+# Si hubieras hecho un mapeo del tipo: volumes: - ./data:/var/lib/mysql, entonces data/ iría aquí.
+# db_data/ # (Descomentar si mapeaste un volumen directamente aquí)
